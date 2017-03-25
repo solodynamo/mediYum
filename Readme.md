@@ -22,7 +22,7 @@ Open editor.html in browser.
 
     ├── README.md               # File from which you are reading currently.
 
-    ├── editor.html             # Main markup
+    ├── index.html             # Main markup
 
     ├── scss
         └── global.scss         # Contains global scss.
