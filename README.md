@@ -1,4 +1,6 @@
 [![mediYum.png](https://s24.postimg.org/zafuy9o1h/medi_Yum.png)](https://postimg.org/image/k1pxkhucx/)
+
+
 A very very very micro medium editor clone . WIP!
 
 ### Get Instantly Writing
@@ -53,6 +55,12 @@ mediYum :heart: contributions. Feel free to send this repo a PR.
  [**solodynamo**](https://github.com/solodynamo)
 
 Contribute and add your name in above list.
+
+## Todos
+mediYum :heart: contributions. Feel free to send this repo a PR.
+
+1. Make each paragraph drag and droppable.
+2. Allow users to add links
 
 ### License
 
