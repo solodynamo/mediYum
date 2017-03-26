@@ -3,6 +3,12 @@
 
 A very very very micro medium editor clone . WIP!
 
+
+### Demo
+
+__demo__: [https://solodynamo.github.io/mediYum/](https://solodynamo.github.io/mediYum/)
+
+
 ### Get Instantly Writing
 - Clone the repo.
 
@@ -61,6 +67,13 @@ mediYum :heart: contributions. Feel free to send this repo a PR.
 
 1. Make each paragraph drag and droppable.
 2. Allow users to add links
+
+## References
+1. __ContentEditable__: [https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/contenteditable](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/contenteditable)
+2. __SelectionAPI__: [https://developer.mozilla.org/en-US/docs/Web/API/Selection](https://developer.mozilla.org/en-US/docs/Web/API/Selection)
+3.  __Medium__: [https://medium.com/](https://medium.com/)
+4. __medium-editor__: [https://github.com/yabwe/medium-editor/](https://github.com/yabwe/medium-editor/)
+5. __mediumJS__:  [https://github.com/jakiestfu/Medium.js/](https://github.com/jakiestfu/Medium.js/)
 
 ### License
 
