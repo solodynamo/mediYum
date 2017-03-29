@@ -206,8 +206,6 @@
 
     function preprocessKeyDown(event) {
         const sel = window.getSelection();
-        addDragListeners()
-
         const // anchor node returns the node in which the selection begins.
         parentParagraph = getParentWithTag(sel.anchorNode, "p");
 

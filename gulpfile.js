@@ -7,7 +7,6 @@ var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var sh = require('shelljs');
 var uglify = require('gulp-uglify');
-var ngAnnotate = require('gulp-ng-annotate');
 var js_obfuscator = require('gulp-js-obfuscator');
 var babel = require('gulp-babel');
 
@@ -27,12 +26,12 @@ gulp.task('sass', (done) => {
   gulp.src('./scss/main.scss')
     .pipe(sass())
     .on('error', sass.logError)
-    .pipe(gulp.dest('./dist/css/'))
+    // .pipe(gulp.dest('./dist/css/')) // Uncomment to see compiled css in minified.
     .pipe(minifyCss({
       keepSpecialComments: 0
     }))
     .pipe(rename({ extname: '.min.css' }))
-    .pipe(gulp.dest('./dist/css/'))
+    .pipe(gulp.dest('./dist/mincss/'))
     .on('end', done);
 });
 
@@ -62,13 +61,11 @@ gulp.task('git-check', (done) => {
 
 gulp.task('total', () => {
   gulp.src('./js/*.js')
-    .pipe(babel({ presets: ['es2015'] })) 
-    .pipe(ngAnnotate())
+    .pipe(babel({ presets: ['es2015'] }))
     .pipe(js_obfuscator({}, ["**/jquery-*.js"]))
-    .pipe(ngAnnotate())
     .pipe(uglify().on('error', function (e) {
       console.log(e);
     }))
-    .pipe(ngAnnotate())
+    .pipe(rename({ extname: '.min.js' }))
     .pipe(gulp.dest('dist/minjs/'));
 });

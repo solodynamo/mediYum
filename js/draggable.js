@@ -27,9 +27,9 @@
 				return; //Means function will exit if no "drop" event is fired.
 			}
 			//Stores dragged elements ID in var draggedId
-			var draggedId = e.dataTransfer.getData("text");
+			const draggedId = e.dataTransfer.getData("text");
 			//Stores referrence to element being dragged in var draggedEl
-			var draggedEl = document.getElementById(draggedId);
+			const draggedEl = document.getElementById(draggedId);
 
 			//if the event "drop" is fired on the dragged elements original drop target e.i..  it's current parentNode,
 			//then set it's css class to ="" which will remove dotted lines around the drop target and exit the function.
@@ -47,8 +47,8 @@
 
 
 		//Retrieve two groups of elements, those that are draggable and those that are drop targets:
-		var draggable = document.querySelectorAll('[draggable]')
-		var targets = document.querySelectorAll('[data-drop-target]');
+		const draggable = document.querySelectorAll('[draggable]');
+		const targets = document.querySelectorAll('[data-drop-target]');
     //Note: using the document.querySelectorAll() will aquire every element that is using the attribute defind in the (..)
 
 
